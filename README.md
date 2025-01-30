@@ -28,4 +28,3 @@ return {
   end,
 }
 ```
-# nvim_plugin_starter
