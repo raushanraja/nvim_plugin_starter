@@ -6,13 +6,13 @@
 ## Installation from local dir using nvim.lazy
 ```lua
 return {
-  dir = '~/REPLACE_ME_WITH_CORRECT_DIR/aitest',
-  name = 'aitest',
+  dir = '~/REPLACE_ME_WITH_CORRECT_DIR/myplugin',
+  name = 'myplugin',
   config = function()
-    require('aitest').setup() -- This line loads the plugin, and then calls the method setup() (this can be any method you define in your plugin) 
+    require('myplugin').setup() -- This line loads the plugin, and then calls the method setup() (this can be any method you define in your plugin) 
     -- Same can be broken down into two lines as below
-    -- local aitest = require('aitest')
-    -- aitest.setup()
+    -- local myplugin = require('myplugin')
+    -- myplugin.setup()
     -- You can also call other methods here, or do any other setup required
   end,
 }
@@ -21,10 +21,10 @@ return {
 ## Installation from githug using nvim.lazy
 ```lua
 return {
-  username/aitest',
-  name = 'aitest',
+  username/myplugin',
+  name = 'myplugin',
   config = function()
-    require('aitest').setup()
+    require('myplugin').setup()
   end,
 }
 ```
